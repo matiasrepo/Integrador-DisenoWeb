@@ -1,0 +1,18 @@
+:root {
+    --bg-aboutUs-color: #7ab573;
+    --font-aboutUsSpan-color: #a83789;
+    --bg-navbar-color: #621A4E;
+    --bg-store-color: #d9d9d9;
+    --bg-aboutUs-color: #252525;
+    --bg-storeTitle-color: #AFADAD;
+    --font-storeTitle-color: #d9d9d9;
+    --bg-storeKitchen-color: #7Ab573;
+    --bg-storeBox-color: #d9d9d9;
+    --storeBoxCart-color: #FFC327;
+    --storeBoxBgTitle-color: #621A4E;
+    --border-storeBox-color: #FFFFFF;
+    --font-storeBoxItem-color: #d9d9d9;
+    --font-storeBoxDetail-color: #FFC327;
+    --font-storeBoxCart-color: #621A4E;
+    --font-navbarSpan-color: #79E06C;
+}
