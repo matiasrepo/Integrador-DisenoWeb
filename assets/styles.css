@@ -16,3 +16,168 @@
     --font-storeBoxCart-color: #621A4E;
     --font-navbarSpan-color: #79E06C;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+/* para importar: font-family: 'Sen', sans-serif; */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+header {
+    background-color: var(--bg-navbar-color);
+    max-width: 100%;
+}
+
+.cart {
+    max-width: 40px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    height: 70px;
+}
+
+.navbar-logo img {
+    max-width: 50px;
+}
+
+.navbar-title {
+    font-family: 'Sen', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.navbar-title span {
+    color: #79E06C;
+}
+
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu>li {
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+.menu a {
+    color: white;
+    font-family: 'Sen', sans-serif;
+
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #FFFFFF;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: scale(0.4);
+    transition: transform 600ms;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+    background: #621A4E;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: scale(0.5);
+    transition: transform 1200ms;
+
+}
+
+@media (max-width: 768px) {
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 70px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: end;
+    }
+    
+    .menu a {
+        color: #d9d9d9;
+        font-weight: 400;
+    }
+    #menu-toggle~.menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked~.menu li {
+        height: 2.5em;
+        padding: 0.5em;
+        border-bottom: 1.5px solid #621A4E;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        background-color: #252525;
+        
+    }
+    .menu>li (:last-child) {
+        border-radius: 10px;
+    }
+
+}
