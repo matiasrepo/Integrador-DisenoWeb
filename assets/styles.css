@@ -169,8 +169,8 @@ main {
 .hero-main-title {
     text-align: center;
     background-color: #7ab573;
-    max-width: 60%;
-    padding: 20px;
+    max-width: 70%;
+    padding: 20px 30px 20px 30px;
     border-radius: 30px;
 }
 
@@ -180,6 +180,7 @@ main {
     font-weight: 100;
     cursor: default;
 }
+
 .hero-main-title span {
     font-family: 'Sen', sans-serif;
     color: #a83789;
@@ -217,3 +218,77 @@ main {
 }
 
 /* estilado de store */
+
+.store-title {
+    text-align: center;
+    font-family: 'Sen', sans-serif;
+    padding: 20px;
+    background-color: #AFADAD;
+}
+
+.store-title h3 {
+    color: #621A4E;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.store-title p {
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+
+.store-title hr {
+    max-width: 35%;
+    margin: 20px 32.5% 0 32.5%;
+    color: #FFC327;
+    background-color: #FFC327;
+    border: 1px solid #FFC327;
+    border-color: #FFC327;
+    border-radius: 2px;
+    outline: none;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+}
+
+.storeCategory {
+    display: flex;
+    justify-content: center;
+    background-color: #7Ab573;
+    margin: 0;
+    text-align: center;
+    font-family: 'Sen', sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 100;
+    padding: 5px;
+    gap: 30px;
+}
+
+.storeCategory img {
+    max-width: 30px;
+
+}
+
+.storeItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.storeItems {
+    background-color: #d9d9d9;
+}
+
+.storeBox {
+    display: flex;
+    background-color: #FFFFFF;
+    margin: 20px;
+    border: 1px solid black;
+    justify-content: center;
+}
+
+.storeBox img {
+    max-width: 70%;
+}
