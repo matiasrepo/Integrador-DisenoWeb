@@ -26,7 +26,6 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
-    max-width: 100%;
 }
 
 header {
@@ -34,6 +33,9 @@ header {
     max-width: 100%;
 }
 
+main {
+    max-width: 100%;
+}
 /* estilado de navbar */
 .cart {
     max-width: 40px;
@@ -53,6 +55,7 @@ header {
     align-items: center;
     padding: 1em;
     height: 70px;
+    overflow: hidden;
 }
 
 .navbar-logo img {
@@ -152,3 +155,33 @@ header {
 }
 
 /* estilado de "hero" */
+
+.hero-main {
+    background-image: url(./img/jpg/background-hero.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-main-title {
+    text-align: center;
+    background-color: #7ab573;
+    max-width: 45%;
+}
+
+.hero-description {
+    display: flex;
+    background-color: #252525;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.hero-description p {
+    color:  white;
+    text-align: center;
+}
+
+.hero-description span {
+    color: #FFC327;
+}
