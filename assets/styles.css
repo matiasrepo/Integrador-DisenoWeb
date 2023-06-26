@@ -36,6 +36,7 @@ header {
 main {
     max-width: 100%;
 }
+
 /* estilado de navbar */
 .cart {
     max-width: 40px;
@@ -44,7 +45,7 @@ main {
 }
 
 .cart:hover {
-    border-bottom: 0.5px solid #d9d9d9; 
+    border-bottom: 0.5px solid #d9d9d9;
     transition: border-bottom 1s;
 }
 
@@ -154,7 +155,7 @@ main {
 
 }
 
-/* estilado de "hero" */
+/* estilado de "about us/hero" */
 
 .hero-main {
     background-image: url(./img/jpg/background-hero.jpg);
@@ -162,28 +163,57 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 50px;
+    max-width: 100%;
 }
 
 .hero-main-title {
     text-align: center;
     background-color: #7ab573;
-    max-width: 45%;
+    max-width: 60%;
+    padding: 20px;
+    border-radius: 30px;
 }
+
+.hero-main-title h2 {
+    font-family: 'Sen', sans-serif;
+    color: white;
+    font-weight: 100;
+    cursor: default;
+}
+.hero-main-title span {
+    font-family: 'Sen', sans-serif;
+    color: #a83789;
+    font-weight: 400;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.hero-main-title feSpecularLighting {
+    font-family: 'Sen', sans-serif;
+    color: white;
+    font-weight: 100;
+}
+
 
 .hero-description {
     display: flex;
     background-color: #252525;
     flex-direction: column;
-    padding: 5px;
+    padding: 20px;
     font-family: 'Sen', sans-serif;
 
 }
 
 .hero-description p {
-    color:  white;
+    color: white;
     text-align: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 10px;
 }
 
 .hero-description span {
     color: #FFC327;
 }
+
+/* estilado de store */
