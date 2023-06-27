@@ -124,7 +124,7 @@ main {
     position: absolute;
     height: 4px;
     width: 30px;
-    transition: transform 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
     border-radius: 2px;
 }
 
@@ -141,7 +141,7 @@ main {
 #menu-toggle:checked+.menu-button-container .menu-button::before {
     margin-top: 0px;
     transform: scale(0.4);
-    transition: transform 700ms;
+    transition: transform 400ms;
 }
 
 #menu-toggle:checked+.menu-button-container .menu-button {
@@ -151,7 +151,7 @@ main {
 #menu-toggle:checked+.menu-button-container .menu-button::after {
     margin-top: 0px;
     transform: scale(0.5);
-    transition: transform 700ms;
+    transition: transform 400ms;
 
 }
 
@@ -216,6 +216,8 @@ main {
 .hero-description span {
     color: #FFC327;
 }
+
+
 
 /* estilado de store */
 
@@ -283,12 +285,97 @@ main {
 
 .storeBox {
     display: flex;
-    background-color: #FFFFFF;
+    flex-direction: column;
+    background-color: #621A4E;
     margin: 20px;
-    border: 1px solid black;
     justify-content: center;
+    max-width: 70%;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 5px 0px 0px;
 }
 
 .storeBox img {
-    max-width: 70%;
+    max-width: 97%;
+    border-radius: 5px 5px 0px 0px;
+}
+.storeProductImg {
+    display: flex;
+    justify-content: center;
+}
+
+.storeProduct {
+    display: flex;
+    justify-content: space-around;
+    background-color: #621A4E;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-right: 0;
+    margin-left: 0;
+    cursor: default;
+}
+
+.storeProduct p {
+    color: #FFFFFF;
+
+}
+
+
+.storeCart {
+    background-color: #FFC327;
+    display: flex;
+    justify-content: space-around;
+    border-bottom-right-radius:  5px;
+    border-bottom-left-radius:  5px;
+    border-top: 4px solid #621A4E;
+    padding: 10px;
+    font-family: 'Sen', sans-serif;
+    cursor: default;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.storeStock {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+    font-weight: 500;
+    font-family: 'Sen', sans-serif;
+}
+
+.storeStock button {
+    font-size: 1rem;
+    background-color: #252525;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 4px;
+    width: 30px;
+    transition: bakground-color 200s, border color 200ms;
+}
+
+.storeStock button:hover {
+    background-color: #AFADAD;
+    border-color: #621A4E;
+    color: #252525;
+    font-weight: 500;
+    transition: 200ms;
+}
+
+.storeStock button:active {
+    background-color: #d9d9d9;
+}
+.storeBox span {
+    color: #FFC327;
+    cursor: pointer;
+    transition: color 400ms text-decoration 400ms;
+}
+
+.storeBox span:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+    transition: 400ms;
 }
