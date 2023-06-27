@@ -289,7 +289,7 @@ main {
     background-color: #621A4E;
     margin: 20px;
     justify-content: center;
-    max-width: 70%;
+    max-width: 90%;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     padding: 5px 0px 0px;
@@ -309,7 +309,7 @@ main {
     justify-content: space-around;
     background-color: #621A4E;
     font-family: 'Sen', sans-serif;
-    font-size: 1rem;
+    font-size: 1.3rem;
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 5px;
@@ -335,7 +335,7 @@ main {
     font-family: 'Sen', sans-serif;
     cursor: default;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .storeStock {
