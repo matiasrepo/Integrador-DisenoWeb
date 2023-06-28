@@ -26,6 +26,7 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
+    /*scroll-behavior: smooth; */
 }
 
 header {
@@ -35,6 +36,10 @@ header {
 
 main {
     max-width: 100%;
+}
+
+footer {
+    background-color: var(--bg-navbar-color);
 }
 
 /* estilado de navbar */
@@ -56,6 +61,7 @@ main {
     align-items: center;
     padding: 1em;
     height: 70px;
+    gap: 5px;
     overflow: hidden;
 }
 
@@ -169,7 +175,7 @@ main {
 .hero-main-title {
     text-align: center;
     background-color: #7ab573;
-    max-width: 70%;
+    max-width: 80%;
     padding: 20px 30px 20px 30px;
     border-radius: 30px;
 }
@@ -208,8 +214,8 @@ main {
 .hero-description p {
     color: white;
     text-align: center;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
     padding: 10px;
 }
 
@@ -226,17 +232,20 @@ main {
     font-family: 'Sen', sans-serif;
     padding: 20px;
     background-color: #AFADAD;
+    cursor: default;
 }
 
 .store-title h3 {
     color: #621A4E;
     font-weight: 400;
     font-size: 3rem;
+    cursor: default;
 }
 
 .store-title p {
     font-weight: 200;
     font-size: 1.3rem;
+    cursor: default;
 }
 
 .store-title hr {
@@ -265,11 +274,18 @@ main {
     font-weight: 100;
     padding: 5px;
     gap: 30px;
+    cursor: default;
 }
 
 .storeCategory img {
     max-width: 30px;
+    cursor: pointer;
+    transition: rotate 500ms;
+}
 
+.storeCategory img:hover {
+    rotate: 180deg;
+    scale: 0.8;
 }
 
 .storeItems {
@@ -299,6 +315,7 @@ main {
     max-width: 97%;
     border-radius: 5px 5px 0px 0px;
 }
+
 .storeProductImg {
     display: flex;
     justify-content: center;
@@ -309,7 +326,7 @@ main {
     justify-content: space-around;
     background-color: #621A4E;
     font-family: 'Sen', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 5px;
@@ -328,8 +345,8 @@ main {
     background-color: #FFC327;
     display: flex;
     justify-content: space-around;
-    border-bottom-right-radius:  5px;
-    border-bottom-left-radius:  5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     border-top: 4px solid #621A4E;
     padding: 10px;
     font-family: 'Sen', sans-serif;
@@ -368,6 +385,7 @@ main {
 .storeStock button:active {
     background-color: #d9d9d9;
 }
+
 .storeBox span {
     color: #FFC327;
     cursor: pointer;
@@ -378,4 +396,89 @@ main {
     color: #FFFFFF;
     text-decoration: underline;
     transition: 400ms;
+}
+
+
+.noStock {
+    color: #FFFFFF;
+    background-color: #252525;
+    border: 2px solid white;
+    margin: 10px;
+    font-family: 'Sen', sans-serif;
+    padding: 5px;
+    text-align: center;
+    cursor: default;
+    border-radius: 10px;
+}
+
+
+/* estilado footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trademark {
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+h5 {
+    margin-top: 10px;
+    font-family: 'Sen', sans-serif;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sen', sans-serif;
+    gap: 5px;
+    cursor: default;
+
+}
+
+
+.contact li {
+    color: #FFFFFF;
+    font-weight: 200;
+    padding: 2px;
+}
+
+.contact li span {
+    cursor: pointer;
+}
+
+.contact a {
+    color: #FFFFFF;
+}
+
+
+h6 {
+    color: #FFC327;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.ubication {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.ubication iframe {
+    border-radius: 5px;
+}
+
+.contact p { 
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
 }
