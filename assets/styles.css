@@ -26,7 +26,7 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
-    /*scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 header {
@@ -42,6 +42,15 @@ footer {
     background-color: var(--bg-navbar-color);
 }
 
+
+.blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    background-color: #eee;
+}
 /* estilado de navbar */
 .cart {
     max-width: 40px;

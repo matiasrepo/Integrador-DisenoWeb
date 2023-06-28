@@ -17,6 +17,7 @@
     .menu a {
         color: #d9d9d9;
         font-weight: 400;
+        transition: color 400ms;
     }
 
     #menu-toggle~.menu li {
@@ -37,13 +38,16 @@
     .menu>li {
         display: flex;
         justify-content: center;
-        width: 45%;
+        width: 100%;
         background-color: #252525;
-
     }
 
     .menu>li:last-child {
-        border-radius: 0px 0px 0px 30px;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .menu a:hover {
+        color: #FFC327;
+        transition: 400ms;
     }
 
 }
