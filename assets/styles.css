@@ -32,10 +32,15 @@
 header {
     background-color: var(--bg-navbar-color);
     max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 main {
     max-width: 100%;
+    margin-top: 70px;
 }
 
 footer {
@@ -73,6 +78,7 @@ footer {
     height: 70px;
     gap: 5px;
     overflow: hidden;
+    
 }
 
 .navbar-logo img {
@@ -428,6 +434,13 @@ footer {
     flex-direction: column;
     align-items: center;
     max-width: 100%;
+
+}
+
+.footer p {
+    color: white;
+    font-family: 'Sen', sans-serif;
+    font-size: 0.8rem;
 }
 
 .trademark {
