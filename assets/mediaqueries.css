@@ -39,8 +39,8 @@
     .menu>li {
         display: flex;
         justify-content: end;
-        width: 35%;
-        background-color: #242424;
+        width: 45%;
+        background-color: #252525;
     }
 
     .menu>li:last-child {
