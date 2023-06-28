@@ -49,14 +49,7 @@ footer {
 }
 
 
-.blur {
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-    background-color: #eee;
-}
+
 /* estilado de navbar */
 .cart {
     max-width: 40px;
@@ -72,12 +65,13 @@ footer {
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1em;
     height: 70px;
     gap: 5px;
     overflow: hidden;
+    max-width: 100%;
     
 }
 
@@ -103,333 +97,66 @@ footer {
     transition: scale 300ms, color 300ms;
 }
 
-/* estilado de "about us/hero" */
 
-.hero-main {
-    background-image: url(./img/jpg/background-hero.jpg);
+.loginNavbar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 50px;
-    max-width: 100%;
-}
-
-.hero-main-title {
-    text-align: center;
-    background-color: #7ab573;
-    max-width: 80%;
-    padding: 20px 30px 20px 30px;
-    border-radius: 30px;
-}
-
-.hero-main-title h2 {
-    font-family: 'Sen', sans-serif;
-    color: white;
-    font-weight: 100;
-    cursor: default;
-}
-
-.hero-main-title span {
-    font-family: 'Sen', sans-serif;
-    color: #a83789;
-    font-weight: 400;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.hero-main-title feSpecularLighting {
-    font-family: 'Sen', sans-serif;
-    color: white;
-    font-weight: 100;
-}
-
-
-.hero-description {
-    display: flex;
-    background-color: #252525;
-    flex-direction: column;
+    justify-content: center;
     padding: 20px;
-    font-family: 'Sen', sans-serif;
-
+    gap: 20px;
+    font-family: 'Sen', sans-serif; 
+    font-weight: 600;
 }
 
-.hero-description p {
-    color: white;
-    text-align: center;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding: 10px;
-}
-
-.hero-description span {
-    color: #FFC327;
-}
-
-
-
-/* estilado de store */
-
-.store-title {
-    text-align: center;
-    font-family: 'Sen', sans-serif;
-    padding: 20px;
-    background-color: #AFADAD;
-    cursor: default;
-}
-
-.store-title h3 {
-    color: #621A4E;
-    font-weight: 400;
-    font-size: 3rem;
-    cursor: default;
-}
-
-.store-title p {
-    font-weight: 200;
-    font-size: 1.3rem;
-    cursor: default;
-}
-
-.store-title hr {
-    max-width: 35%;
-    margin: 20px 32.5% 0 32.5%;
-    color: #FFC327;
-    background-color: #FFC327;
-    border: 1px solid #FFC327;
-    border-color: #FFC327;
-    border-radius: 2px;
-    outline: none;
-    text-align: center;
-    align-self: center;
-    align-content: center;
-}
-
-.storeCategory {
+.loginNavbar a {
     display: flex;
-    justify-content: center;
-    background-color: #7Ab573;
-    margin: 0;
-    text-align: center;
-    font-family: 'Sen', sans-serif;
-    font-size: 1.4rem;
-    color: white;
-    font-weight: 100;
-    padding: 5px;
-    gap: 30px;
-    cursor: default;
-}
-
-.storeCategory img {
-    max-width: 30px;
-    cursor: pointer;
-    transition: rotate 500ms;
-}
-
-.storeCategory img:hover {
-    rotate: 180deg;
-    scale: 0.8;
-}
-
-.storeItems {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    max-width: 100%;
-}
-
-.storeItems {
-    background-color: #d9d9d9;
-}
-
-.storeBox {
-    display: flex;
-    flex-direction: column;
-    background-color: #621A4E;
-    margin: 20px;
-    justify-content: center;
-    max-width: 90%;
-    border: 2px solid #FFFFFF;
-    border-radius: 10px;
-    padding: 5px 0px 0px;
-}
-
-.storeBox img {
-    max-width: 97%;
-    border-radius: 5px 5px 0px 0px;
-}
-
-.storeProductImg {
-    display: flex;
-    justify-content: center;
-}
-
-.storeProduct {
-    display: flex;
-    justify-content: space-around;
-    background-color: #621A4E;
-    font-family: 'Sen', sans-serif;
+    color: #FFFFFF;
+    transition: color 400ms, scale 400ms;
     font-size: 1rem;
-    border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 5px;
-    margin-right: 0;
-    margin-left: 0;
-    cursor: default;
 }
 
-.storeProduct p {
-    color: #FFFFFF;
-
-}
-
-
-.storeCart {
-    background-color: #FFC327;
-    display: flex;
-    justify-content: space-around;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-top: 4px solid #621A4E;
-    padding: 10px;
-    font-family: 'Sen', sans-serif;
-    cursor: default;
-    align-items: center;
-    font-size: 1.3rem;
-}
-
-.storeStock {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    align-items: center;
-    font-weight: 500;
-    font-family: 'Sen', sans-serif;
-}
-
-.storeStock button {
-    font-size: 1rem;
-    background-color: #252525;
-    color: #FFFFFF;
-    border-radius: 5px;
-    padding: 4px;
-    width: 30px;
-    transition: bakground-color 200s, border color 200ms;
-}
-
-.storeStock button:hover {
-    background-color: #AFADAD;
-    border-color: #621A4E;
-    color: #252525;
-    font-weight: 500;
-    transition: 200ms;
-}
-
-.storeStock button:active {
-    background-color: #d9d9d9;
-}
-
-.storeBox span {
+.loginNavbar a:hover {
     color: #FFC327;
-    cursor: pointer;
-    transition: color 400ms text-decoration 400ms;
-}
-
-.storeBox span:hover {
-    color: #FFFFFF;
-    text-decoration: underline;
+    scale: 1.1;
     transition: 400ms;
 }
 
 
-.noStock {
-    color: #FFFFFF;
-    background-color: #252525;
-    border: 2px solid white;
-    margin: 10px;
-    font-family: 'Sen', sans-serif;
-    padding: 5px;
-    text-align: center;
-    cursor: default;
-    border-radius: 10px;
+.loginNavbar img {
+    max-width: 50%;
+    margin: 25px;
 }
 
+@media (max-width: 768px) {
+    .loginNavbar img {
+        display: none;
+    }
 
-/* estilado footer */
-.footer {
+    .navbar-logo img {
+        display: none;
+    }
+}
+/* estilado de "login */
+
+.loginBox  {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
-
+    margin: 5%;
+    border: 2px solid black;
+    font-family: 'Sen', sans-serif; 
+    text-align: center;
+    padding: 5px;
+    
 }
 
-.footer p {
-    color: white;
-    font-family: 'Sen', sans-serif;
-    font-size: 0.8rem;
-}
-
-.trademark {
-    padding: 10px;
-    font-size: 1.5rem;
-    margin-top: 5px;
-}
-
-h5 {
-    margin-top: 10px;
-    font-family: 'Sen', sans-serif;
-    color: #FFFFFF;
-    font-weight: 300;
-    font-size: 0.9rem;
-}
-
-.contact {
+.loginForm {
     display: flex;
     flex-direction: column;
-    font-family: 'Sen', sans-serif;
-    gap: 5px;
-    cursor: default;
-    margin: 5px;
+    padding: 5px;
 }
 
 
-.contact li {
-    color: #FFFFFF;
-    font-weight: 200;
-    padding: 2px;
-}
 
-.contact li span {
-    cursor: pointer;
-}
-
-.contact a {
-    color: #FFFFFF;
-}
-
-
-h6 {
-    color: #FFC327;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-decoration: underline;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.ubication {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-}
-
-.ubication iframe {
-    border-radius: 5px;
-    max-width: 100%;
-}
-
-.contact p { 
-    color: white;
-    font-size: 0.8rem;
-    text-align: start;
-}
