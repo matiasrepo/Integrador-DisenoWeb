@@ -40,17 +40,15 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        background-color: #621A4E;
+        background-color: #252525;
     }
 
     .menu>li:last-child {
         border-radius: 0px 0px 15px 15px;
     }
-
     .menu a:hover {
         color: #FFC327;
         transition: 400ms;
-
     }
-    
+
 }
