@@ -482,7 +482,6 @@ h6 {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    align-items: center;
 }
 
 .ubication iframe {
@@ -493,5 +492,5 @@ h6 {
 .contact p { 
     color: white;
     font-size: 0.8rem;
-    text-align: center;
+    text-align: start;
 }
