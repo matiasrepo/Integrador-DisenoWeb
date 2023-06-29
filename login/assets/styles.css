@@ -29,6 +29,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #252525;
+}
+
 header {
     background-color: var(--bg-navbar-color);
     max-width: 100%;
@@ -41,10 +45,11 @@ header {
 main {
     max-width: 100%;
     margin-top: 70px;
+    
 }
 
 footer {
-    background-color: var(--bg-navbar-color);
+    background-color: #252525);
     max-width: 100%;
 }
 
@@ -89,6 +94,7 @@ footer {
 
 .navbar-title span {
     color: #79E06C;
+    
 }
 
 .navbar-title:hover {
@@ -144,19 +150,157 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5%;
-    border: 2px solid black;
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid #AFADAD;
     font-family: 'Sen', sans-serif; 
     text-align: center;
-    padding: 5px;
-    
+    padding: 5%;
+    background-color: #621A4E;
+    border-radius: 10px;
 }
 
+
+.loginBox h1 {
+    padding: 0.3rem;
+    color: #FFC327;
+}
+
+.loginBox p {
+    color: #FFFFFF;
+}
+
+.loginBox a {
+    color: #79E06C;
+}
+
+.loginBoxTwo {
+    padding: 20px;
+    border: 2px solid #FFFFFF;
+    border-width: 3px;
+    border-radius: 10px;
+    background-color: #252525;
+    margin: 10px;
+}
 .loginForm {
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #AFADAD;
+    margin: 10px;
+    gap: 0.2rem;
 }
 
 
+.loginForm p {
+    text-align: start;
+    color: black;
+    font-weight: 500;
+}
+.loginForm button {
+    background-color: #621A4E;
+    padding: 10px;
+    border: transparent;
+    border-radius: 5px;
+    color: #FFC327;
+    font-family: 'Sen', sans-serif;
+    margin-top: 5px;
+    text-align: center;
+    transition: background-color 700ms;
+    font-size: 1rem;
+    cursor: pointer;
+}
 
+.loginForm button:hover {
+    background-color: #380e2c;
+    transition: 700ms;
+    
+
+.loginForm button:active {
+    color: #FFFFFF;
+    background-color: #40703a;
+    transition: 100ms;
+}
+
+/* estilado footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+
+}
+
+.footer p {
+    color: white;
+    font-family: 'Sen', sans-serif;
+    font-size: 0.8rem;
+}
+
+.trademark {
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+h5 {
+    margin-top: 10px;
+    font-family: 'Sen', sans-serif;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sen', sans-serif;
+    gap: 5px;
+    cursor: default;
+    margin: 5px;
+}
+
+
+.contact li {
+    color: #FFFFFF;
+    font-weight: 200;
+    padding: 2px;
+}
+
+.contact li span {
+    cursor: pointer;
+}
+
+.contact a {
+    color: #FFFFFF;
+}
+
+
+h6 {
+    color: #FFC327;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.ubication {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.ubication iframe {
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.contact p { 
+    color: white;
+    font-size: 0.8rem;
+    text-align: start;
+}
