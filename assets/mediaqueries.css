@@ -179,6 +179,8 @@
     .footer {
         text-align: start;
         margin: unset;
+        align-items: center;
+        text-align: center;
     }
 
     .footer hr {

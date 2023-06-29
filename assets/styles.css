@@ -376,21 +376,24 @@ footer {
 }
 
 .storeStock button {
+    align-items: center;
     font-size: 1rem;
     background-color: #252525;
     color: #FFFFFF;
     border-radius: 5px;
-    padding: 4px;
+    padding: 5px;
     width: 30px;
     transition: bakground-color 200s, border color 200ms;
+    border: transparent;
 }
 
 .storeStock button:hover {
-    background-color: #AFADAD;
+    background-color: #6aaa51;
     border-color: #621A4E;
     color: #252525;
     font-weight: 500;
     transition: 200ms;
+    scale: 1.1;
 }
 
 .storeStock button:active {
@@ -400,12 +403,13 @@ footer {
 .storeBox span {
     color: #FFC327;
     cursor: pointer;
-    transition: color 400ms text-decoration 400ms;
+    transition: color 400ms, text-decoration 400ms, scale 500ms;
 }
 
 .storeBox span:hover {
     color: #FFFFFF;
     text-decoration: underline;
+    scale: 1.1;
     transition: 400ms;
 }
 
@@ -459,6 +463,7 @@ h5 {
     gap: 5px;
     cursor: default;
     margin: 5px;
+    transition: color 400ms, scale 500ms;
 }
 
 
@@ -466,6 +471,7 @@ h5 {
     color: #FFFFFF;
     font-weight: 200;
     padding: 2px;
+    transition: color 400ms, scale 500ms;
 }
 
 .contact li span {
@@ -476,6 +482,14 @@ h5 {
     color: #FFFFFF;
 }
 
+.contact li:hover {
+    color: #FFC327;
+    scale: 1.1;
+}
+.contact a:hover {
+    color: #FFC327;
+    scale: 1.1;
+}
 
 h6 {
     color: #FFC327;
@@ -501,4 +515,4 @@ h6 {
     color: white;
     font-size: 0.8rem;
     text-align: start;
-}
+} 
