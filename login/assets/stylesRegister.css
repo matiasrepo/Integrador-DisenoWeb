@@ -309,3 +309,42 @@ h6 {
     font-size: 0.8rem;
     text-align: start;
 }
+
+@media (min-width: 800px) {
+    .storeItems {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .storeBox {
+        max-width: 20%;
+    }
+
+    .storeCart {
+        font-size: 1rem;
+    }
+    .storeCart button{
+        max-width: 2rem;
+        padding: 2%;
+    }
+
+    .noStock {
+        padding: 3%;
+        margin: 2%;
+    }
+
+    .footer {
+        text-align: start;
+        margin: unset;
+    }
+
+    .footer hr {
+        max-width: 100%;
+    }
+
+
+
+
+    }
+

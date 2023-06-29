@@ -1,9 +1,12 @@
-@media (max-width: 768px) {
+@media (max-width: 880px) {
     .menu-button-container {
         display: flex;
     }
 
+
+
     .menu {
+        display: flex;
         position: absolute;
         top: 0;
         margin-top: 70px;
@@ -46,9 +49,150 @@
     .menu>li:last-child {
         border-radius: 0px 0px 15px 15px;
     }
+
     .menu a:hover {
         color: #FFC327;
         transition: 400ms;
     }
 
+    .logInA a {
+        color: #82df78;
+        font-weight: 600;
+        transition: color 400ms;
+    }
+
+
+    .registerA a {
+        color: #FFC327;
+        font-weight: 600;
+        transition: color 400ms;
+    }
+
+    .hero-main {
+        background-image: url(./img/jpg/background-hero-mobile.jpg);
+    }
+}
+
+@media (min-width: 768px) {
+
+    .menu a,
+    .menu li {
+        transition: color 400ms, scale 400ms;
+    }
+
+    .menu li:hover,
+    .menu a:hover {
+        color: #FFC327;
+        scale: 1.1;
+        transition: 400ms;
+    }
+
+    .logInA a {
+        color: #82df78;
+        font-weight: 600;
+        transition: color 400ms;
+    }
+
+    .logInA a:hover {
+        color: #FFFFFF;
+        transition: 400ms;
+    }
+
+    .registerA a {
+        color: #FFC327;
+        font-weight: 600;
+        transition: color 400ms;
+    }
+
+    .registerA a:hover {
+        color: #FFFFFF;
+        transition: 400ms;
+    }
+
+
+    /* estilado de hero */
+    .hero-main {
+        padding: 10rem;
+        background-position: center;
+    }
+
+    .hero-main-title {
+        max-width: 100%;
+        padding: 6rem;
+        border-radius: 150px;
+    }
+
+    .hero-main-title h2 {
+        font-size: 4rem;
+    }
+
+    .hero-main-title span {
+        font-size: 4rem;
+    }
+
+    .hero-description {
+        font-size: 2rem;
+        padding: 5rem;
+        gap: 3rem;
+        cursor: default;
+    }
+
+    /* estilado de store */
+    .store-title h3 {
+        font-size: 6.5rem;
+    }
+
+    .store-title p {
+        font-size: 2.5rem;
+    }
+
+    .storeCategory {
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 800px) {
+    .storeItems {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .storeBox {
+        max-width: 20%;
+    }
+
+    .storeCart {
+        font-size: 1rem;
+    }
+    .storeCart button{
+        max-width: 2rem;
+        padding: 2%;
+    }
+
+    .noStock {
+        padding: 3%;
+        margin: 2%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        margin: unset;
+    }
+
+    .footer hr {
+        max-width: 100%;
+    }
+    .contact {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .contact h6,
+    .contact li {
+        flex-direction: column;
+    }
 }
