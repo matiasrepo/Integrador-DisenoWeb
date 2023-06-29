@@ -177,22 +177,16 @@
     }
 
     .footer {
-        flex-direction: column;
-        align-items:center;
-        justify-content: center;
+        text-align: start;
         margin: unset;
     }
 
     .footer hr {
         max-width: 100%;
     }
-    .contact {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
+
+
+
+
     }
-    .contact h6,
-    .contact li {
-        flex-direction: column;
-    }
-}
+
