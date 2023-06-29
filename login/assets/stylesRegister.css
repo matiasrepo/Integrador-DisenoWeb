@@ -157,7 +157,7 @@ footer {
     border: 2px solid #AFADAD;
     font-family: 'Sen', sans-serif;
     text-align: center;
-    padding: 1%;
+    padding: 5%;
     background-color: #621A4E;
     border-radius: 10px;
 }
@@ -198,10 +198,9 @@ footer {
 
 
 .loginForm p {
-    text-align: center;
+    text-align: start;
     color: black;
     font-weight: 500;
-    font-size: 1.3rem;
 }
 
 .loginForm button {
