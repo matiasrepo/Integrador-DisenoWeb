@@ -177,12 +177,12 @@ footer {
 }
 
 .loginBoxTwo {
-    padding: 40px;
+    padding: 1rem;
     border: 2px solid #FFFFFF;
     border-width: 3px;
     border-radius: 10px;
     background-color: #252525;
-    margin: 10px;
+    margin: 0.3rem;
 }
 
 .loginForm {
@@ -210,7 +210,7 @@ footer {
     border: transparent;
     border-radius: 3px;
     max-width: 100%;
-    width: 70%;
+    width: 95%;
     height: 30px;
     align-items: center;
 }
