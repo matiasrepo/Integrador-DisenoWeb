@@ -44,13 +44,14 @@ header {
 
 main {
     max-width: 100%;
-    margin-top: 70px;
+    margin-top: 80px;
 
 }
 
 footer {
     background-color: #252525;
     max-width: 100%;
+
 }
 
 
@@ -151,15 +152,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
-    margin-left: 5%;
-    margin-right: 5%;
-    border: 2px solid #AFADAD;
     font-family: 'Sen', sans-serif;
     text-align: center;
-    padding: 1%;
-    background-color: #621A4E;
+    padding: 1rem;
+    border: 2px solid #FFFFFF;
+    border-width: 3px;
     border-radius: 10px;
+    background-color: #252525;
+    margin: 1rem;
 }
 
 
@@ -176,14 +176,7 @@ footer {
     color: #79E06C;
 }
 
-.loginBoxTwo {
-    padding: 1rem;
-    border: 2px solid #FFFFFF;
-    border-width: 3px;
-    border-radius: 10px;
-    background-color: #252525;
-    margin: 0.3rem;
-}
+
 
 .loginForm {
     display: flex;
@@ -245,9 +238,10 @@ footer {
 .footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
     max-width: 100%;
     margin-top: 30px;
+    padding: 5px;
+    margin-bottom: 5px;
 
 }
 
@@ -255,12 +249,14 @@ footer {
     color: white;
     font-family: 'Sen', sans-serif;
     font-size: 0.8rem;
+    text-align: center;
 }
 
 .trademark {
-    padding: 10px;
+    padding: 2px;
     font-size: 1.5rem;
     margin-top: 5px;
+    text-align: center;
 }
 
 h5 {
@@ -305,19 +301,10 @@ h6 {
     margin-top: 20px;
 }
 
-.ubication {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-}
 
-.ubication iframe {
-    border-radius: 5px;
-    max-width: 100%;
-}
 
 .contact p {
     color: white;
     font-size: 0.8rem;
-    text-align: start;
+    text-align: center;
 }
