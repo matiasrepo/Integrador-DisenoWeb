@@ -188,20 +188,31 @@ footer {
 .loginForm {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    border: 1px solid white;
+    padding: 20px;
+    border: 1px solid #40703a;
     border-radius: 5px;
-    background-color: #AFADAD;
+    background-color:#1d1d1d;
     margin: 10px;
-    gap: 0.2rem;
+    gap: 5px;
+    align-items: center;
 }
 
 
 .loginForm p {
     text-align: center;
-    color: black;
+    color: #FFC327;
     font-weight: 500;
     font-size: 1.3rem;
+    margin-top: 3%;
+}
+
+.loginForm input {
+    border: transparent;
+    border-radius: 3px;
+    max-width: 100%;
+    width: 70%;
+    height: 30px;
+    align-items: center;
 }
 
 .loginForm button {
