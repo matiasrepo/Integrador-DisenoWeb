@@ -45,7 +45,9 @@ header {
 main {
     max-width: 100%;
     margin-top: 80px;
-
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
 }
 
 footer {
@@ -184,7 +186,7 @@ footer {
     padding: 20px;
     border: 1px solid #40703a;
     border-radius: 5px;
-    background-color:#1d1d1d;
+    background-color: #1d1d1d;
     margin: 10px;
     gap: 5px;
     align-items: center;
@@ -242,7 +244,7 @@ footer {
     margin-top: 30px;
     padding: 5px;
     margin-bottom: 5px;
-
+    align-items: center;
 }
 
 .footer p {
@@ -274,13 +276,14 @@ h5 {
     gap: 5px;
     cursor: default;
     margin: 5px;
+    text-align: center;
 }
-
 
 .contact li {
     color: #FFFFFF;
     font-weight: 200;
     padding: 2px;
+    transition: color 400ms, scale 400ms;
 }
 
 .contact li span {
@@ -290,6 +293,19 @@ h5 {
 .contact a {
     color: #FFFFFF;
 }
+.contact li:hover {
+    color: #a83789;
+    scale: 1.1;
+    transition: 400ms;
+}
+.contact a:hover {
+    color: #a83789;
+    scale: 1.1;
+    transition: 400ms;
+}
+
+
+
 
 
 h6 {
@@ -312,6 +328,11 @@ h6 {
 
 
 @media (min-width: 768px) {
+
+    main {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
 
     .menu a,
     .menu li {
@@ -404,7 +425,8 @@ h6 {
     .storeCart {
         font-size: 1rem;
     }
-    .storeCart button{
+
+    .storeCart button {
         max-width: 2rem;
         padding: 2%;
     }
@@ -426,5 +448,4 @@ h6 {
 
 
 
-    }
-
+}

@@ -42,11 +42,15 @@ header {
     width: 100%;
 }
 
+
 main {
     max-width: 100%;
-    margin-top: 70px;
-
+    margin-top: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
 }
+
 
 footer {
     background-color: #252525;
@@ -136,6 +140,13 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    main {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    
     .loginNavbar img {
         display: none;
     }
